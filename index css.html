@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <title>Gyakorló összes példa</title>
+    <script src="https://kit.fontawesome.com/b7bb2535c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- itt tudjuk a színét is beállítani -->
+        <a class="navbar-brand" href="#">Navbar</a>   <!-- neve márkanév, #= főoldalra mutason pl. "/xy.html" -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">   <!-- ebbe vannak felsorolva a menűpontok -->
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>    <!-- # #= főoldalra mutason pl. "/xy.html" -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index css.html">CSS</a>
+            </li>
+            <li class="nav-item dropdown">  <!-- lenyiló menű ehez kell javascrip -->
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> <!-- le van tiltva szürke színű és a kattintásra nem reagál -->
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">  <!-- ez egy kereső menű -->
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <h1>Reszponziv rács szerkezethez H1</h1>
+      <h6>Méret H6</h6>
+     
+        	
+
+
+
+      <!-- töröl -->
+      <table>
+        <caption>Nyitvatartás</caption> <!-- boostrapban figyelni kell mert néha alulra rakja -->
+        <thead>
+          <!-- fejlés felsősor -->
+          <tr>
+            <th>Day</th> <!-- ügyelni theadben nem tr van hanem th -->
+            <th>Open</th> <!-- bosstrap miat a szövegek nem kerülnek középre hanem bal szélre -->
+            <th>Close</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- thead -et ha használunk akkor kötelező tbody-t használni -->
+          <tr>
+            <td>Monday - Friday</td>
+            <td> 09:00</td>
+            <td>21:00</td>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td> 09:00</td>
+            <td>21:00</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td> 09:00</td>
+            <td>21:00</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- töröl -->
+   
+</body>
+</html>
